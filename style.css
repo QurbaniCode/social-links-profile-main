@@ -59,8 +59,8 @@ body{
 
 .card-img {
   display: block;
-  width: 88px;
-  height: 88px;
+  width: 5.5rem;
+  height: 5.5rem;
   margin-inline:auto;
   border-radius: 50%;
 }
@@ -68,7 +68,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--space-300);
+  margin-block-start: var(--space-300);
   text-align: center;
 }
 .card-content-title{
@@ -77,13 +77,13 @@ body{
 
 }
 .card-content-category{
-  margin-top: 4px;
+    margin-block-start: 0.25rem;
     color: var(--color-green);
     font-size: var(--text-size-small);
     font-weight: var(--text-weight-600);
 }
 .card-content-description{
-  padding-top: var(--space-300);
+  margin-block-start: var(--space-300);
   color: var(--color-white);
   font-size: var(--text-size-small);
   font-weight: var(--text-weight-400);
@@ -119,4 +119,10 @@ body{
 .card-links-social:focus-visible {
     outline: 2px solid var(--color-green);
     outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-links-social {
+        transition: none;
+    }
 }
