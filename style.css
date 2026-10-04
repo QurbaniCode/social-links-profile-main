@@ -27,6 +27,7 @@
   --border-radius: 12px;
   
   --space-500:40px;
+  --space-400: 16px;
   --space-300: 24px;
   --space-200: 12px;
 
@@ -91,7 +92,7 @@ body{
 .card-links{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--space-400);
   margin-top: var(--space-300);
 }
 .card-links-social{
